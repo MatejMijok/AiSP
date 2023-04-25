@@ -3,15 +3,15 @@
 #include <stdlib.h>
 #define MAX_SIZE 100
 
-int binomniKoeficijent(int, int);
-int binomniKoefStog(int, int);
-void push(Stack* s, int x);
-int pop(Stack* s);
-
 typedef struct Stack {
     int top;
     int data[MAX_SIZE];
 } Stack;
+
+int binomniKoeficijent(int, int);
+int binomniKoefStog(int, int);
+void push(Stack* s, int x);
+int pop(Stack* s);
 
 int main()
 {
