@@ -48,6 +48,10 @@ void noviUnos(Cvor** cvor, char upis) {
         *cvor = noviCvor(upis);
         return;
     }
+
+    if (upis == (*cvor)->x)
+        return;
+
     if (upis < (*cvor)->x)
         noviUnos(&(*cvor)->left, upis);
     else
